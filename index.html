@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Vishwaraj Singh Girase, a Big Data Analytics student specializing in Python, Java, SQL, and Data Analysis.">
+  <title>Vishwaraj Singh Girase Portfolio</title>
+  <style>
+    /* Root styles for theme switcher */
+    :root {
+      --primary-color: #6c63ff;
+      --bg-color: #121212;
+      --text-color: #ffffff;
+      --secondary-color: #d9d9d9;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Container and section styling */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: var(--text-color);
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      color: var(--primary-color);
+    }
+
+    h1, h2 {
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    /* Resume introduction */
+    .intro {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .intro h1 {
+      font-size: 2.5em;
+    }
+
+    .intro p {
+      font-size: 1.2em;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    /* Section Styling */
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      width: 50px;
+      height: 4px;
+      background-color: var(--primary-color);
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+    }
+
+    /* Education Section */
+    .education, .projects {
+      border-left: 4px solid var(--primary-color);
+      padding-left: 20px;
+    }
+
+    .education h3, .projects h3 {
+      font-size: 1.5em;
+      color: var(--secondary-color);
+    }
+
+    .education p, .projects p {
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
+
+    /* Project Section */
+    .project-item {
+      margin-bottom: 30px;
+    }
+
+    .project-item a {
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+
+    .project-item a:hover {
+      color: var(--secondary-color);
+    }
+
+    /* Theme Switcher */
+    .theme-switcher {
+      cursor: pointer;
+      padding: 10px;
+      font-size: 1.2em;
+      background: var(--primary-color);
+      color: var(--text-color);
+      border: none;
+      border-radius: 5px;
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+
+      .intro {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="container">
+    <h1>Vishwaraj's Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-switcher" onclick="toggleTheme()">🌗 Switch Theme</button>
+  </header>
+
+  <!-- Introduction Section -->
+  <section id="about" class="intro container">
+    <h1>Hello, I'm Vishwaraj Singh Girase</h1>
+    <p>I'm a technology enthusiast from Dhule district in Maharashtra, raised in Uttarakhand. I hold a degree in Information Technology from SPPU University with a CGPA of 7.3. Currently, I am pursuing a PG Diploma in Big Data Analytics at CDAC, specializing in Python, Java, SQL, and data analysis.</p>
+    
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education container">
+    <h2 class="section-title">Education</h2>
+    <h3>Post Graduate Diploma in Big Data Analytics</h3>
+    <p>CDAC - Currently Pursuing</p>
+
+    <h3>Bachelor of Engineering in Information Technology</h3>
+    <p>SPPU University - CGPA: 7.3</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects container">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-item">
+      <h3>Library Management System</h3>
+      <p>Technologies: Java, SQL</p>
+      <p>Developed a full-featured library system to manage book inventory and operations, including functionalities like book borrowing, search, and user management.</p>
+      <a href="https://github.com/yourgithub/library-management" target="_blank">GitHub Repo</a> | <a href="https://library-system.com" target="_blank">Live Demo</a>
+    </div>
+
+    <div class="project-item">
+      <h3>Data Analytics Dashboard</h3>
+      <p>Technologies: Python, Matplotlib, Seaborn</p>
+      <p>Created a real-time data analytics dashboard displaying various visualizations, providing insights into datasets using advanced Python libraries.</p>
+      <a href="https://github.com/yourgithub/data-analytics-dashboard" target="_blank">GitHub Repo</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="container">
+    <p>&copy; 2024 Vishwaraj Singh Girase | <a href="mailto:vishwaraj.singh@example.com">vishwaraj.singh@example.com</a> | <a href="https://linkedin.com/in/vishwarajsingh" target="_blank">LinkedIn</a> | <a href="https://github.com/yourgithub" target="_blank">GitHub</a></p>
+  </footer>
+
+  <script>
+    // Theme Switcher
+    function toggleTheme() {
+      const currentBg = getComputedStyle(document.documentElement).getPropertyValue('--bg-color').trim();
+      if (currentBg === '#121212') {
+        document.documentElement.style.setProperty('--bg-color', '#ffffff');
+        document.documentElement.style.setProperty('--text-color', '#000000');
+      } else {
+        document.documentElement.style.setProperty('--bg-color', '#121212');
+        document.documentElement.style.setProperty('--text-color', '#ffffff');
+      }
+    }
+  </script>
+
+</body>
+</html>
